@@ -2,6 +2,7 @@
 %define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 %define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 Summary:	Rena RDF library
+Summary(pl):	Rena - biblioteka RDF
 Name:		ruby-rena
 Version:	0.0.4
 Release:	1
@@ -18,6 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 RDF module for Ruby modeled after the Java Jena framework.
+
+%description -l pl
+Modu³ RDF dla jêzyka Ruby modelowany w oparciu o szkielet Jena dla
+Javy.
 
 %prep
 %setup -q -n rena-%{version}
