@@ -9,7 +9,6 @@ Source0:	http://web.sfc.keio.ac.jp/~s01397ms/archives/rena-%{version}.tar.gz
 # Source0-md5:	5c89e85e1619df19dd45be949d1e3674
 URL:		http://raa.ruby-lang.org/project/rena/
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby-modules
 BuildRequires:	ruby-devel
 Requires:	ruby-modules
 #BuildArch:	noarch
