@@ -2,16 +2,16 @@ Summary:	Rena RDF library
 Summary(pl):	Rena - biblioteka RDF
 Name:		ruby-rena
 Version:	0.0.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://web.sfc.keio.ac.jp/~s01397ms/archives/rena-%{version}.tar.gz
 # Source0-md5:	5c89e85e1619df19dd45be949d1e3674
 URL:		http://raa.ruby-lang.org/project/rena/
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby
+BuildRequires:	ruby-modules
 BuildRequires:	ruby-devel
-Requires:	ruby
+Requires:	ruby-modules
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
