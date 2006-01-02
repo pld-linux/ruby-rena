@@ -36,12 +36,12 @@ rdoc --ri -o ri lib/*
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{ruby_rubylibdir},%{ruby_ridir},%{_examplesdir}/%{name}}
+install -d $RPM_BUILD_ROOT{%{ruby_rubylibdir},%{ruby_ridir},%{_examplesdir}/%{name}-%{version}}
 
 ruby setup.rb install --prefix=$RPM_BUILD_ROOT
 
 cp -a ri/ri/* $RPM_BUILD_ROOT%{ruby_ridir}
-cp -a samples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
+cp -a samples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %{ruby_rubylibdir}/rena
 %{ruby_rubylibdir}/rena.rb
 %{ruby_ridir}/Rena
-%{_examplesdir}/%{name}
+%{_examplesdir}/%{name}-%{version}
