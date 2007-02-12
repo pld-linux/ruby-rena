@@ -1,5 +1,5 @@
 Summary:	Rena RDF library
-Summary(pl.UTF-8):   Rena - biblioteka RDF
+Summary(pl.UTF-8):	Rena - biblioteka RDF
 Name:		ruby-rena
 Version:	0.0.4
 Release:	2
