@@ -1,5 +1,5 @@
 Summary:	Rena RDF library
-Summary(pl):	Rena - biblioteka RDF
+Summary(pl.UTF-8):   Rena - biblioteka RDF
 Name:		ruby-rena
 Version:	0.0.4
 Release:	2
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 RDF module for Ruby modeled after the Java Jena framework.
 
-%description -l pl
-Modu³ RDF dla jêzyka Ruby modelowany w oparciu o szkielet Jena dla
+%description -l pl.UTF-8
+ModuÅ‚ RDF dla jÄ™zyka Ruby modelowany w oparciu o szkielet Jena dla
 Javy.
 
 %prep
